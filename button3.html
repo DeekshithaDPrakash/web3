@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button usages</title>
+    </head>
+    <body>
+        <button onclick="showandhide()">click me</button>
+        <script>
+            function showandhide(){
+                var x=document.getElementById('Sectionname');
+                if (x.style.display=='none'){
+                    x.style.display='block';
+                } else {
+                    x.style.display='none';
+                }
+            }
+        </script>
+        <div id="Sectionname" style="display:none">Yay! Here's the text you can hide or display</div>
+    </body>
+</html>
